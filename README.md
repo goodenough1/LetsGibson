@@ -1,7 +1,7 @@
  # Let's Gibson - Gibson Assembly 引物设计工具
 
 <div align="center">
-  <img src="https://dingyi.asia/pdf/LetsGibson.svg" alt="LetsGibson Logo" width="200">
+  <img src="https://dingyi.asia/pdf/LetsGibson-1.svg" alt="LetsGibson Logo" width="200">
 </div>
 
 ## 使用方法
