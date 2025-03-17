@@ -6,6 +6,8 @@ Let's Gibson - Gibson Assembly 引物设计工具
 
 本作品包括：
 
+Let's Gibson 源码（scripts中的文件）
+
 Let's Gibson可执行程序（LetsGibson.exe）
 
 图形用户界面设计
@@ -69,6 +71,8 @@ Copyright (c) (c) [2025] [DINGYi,4D Genome Lab]
 [francisding@qq.com, 4dgenome.net]
 
 This work includes:
+
+Let's Gibson source（Files in scripts folder）
 
 Let's Gibson executable (LetsGibson.exe)
 
