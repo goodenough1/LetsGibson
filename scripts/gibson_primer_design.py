@@ -2,9 +2,20 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox, scrolledtext
 from dna_tools import DNATools
+
+# 获取程序运行路径,兼容打包后的exe
+if getattr(sys, 'frozen', False):
+    # 如果是打包后的exe
+    root_path = os.path.dirname(sys.executable)
+else:
+    # 如果是python脚本
+    root_path = os.path.dirname(os.path.abspath(__file__))
+
+root_path = os.path.join(root_path, "..")
 
 class GibsonPrimerDesignApp:
     """Gibson Assembly引物设计工具的图形用户界面"""
@@ -16,7 +27,7 @@ class GibsonPrimerDesignApp:
         
         # 设置窗口图标
         try:
-            icon_path = "LetsGibson_subsize.ico"
+            icon_path = f"{root_path}/assets/LetsGibson_subsize.ico"
             if os.path.exists(icon_path):
                 self.root.iconbitmap(icon_path)
         except Exception as e:
@@ -773,7 +784,7 @@ class GibsonPrimerDesignApp:
         about_window.resizable(True, True)
         
         try:
-            icon_path = "LetsGibson.ico"
+            icon_path = f"{root_path}/assets/LetsGibson_subsize.ico"
             if os.path.exists(icon_path):
                 about_window.iconbitmap(icon_path)
         except Exception as e:
@@ -786,7 +797,7 @@ class GibsonPrimerDesignApp:
         try:
             # 尝试加载JPG图片
             from PIL import Image, ImageTk
-            img_path = "LetsGibson.jpg"
+            img_path = f"{root_path}/assets/LetsGibson.jpg"
             if os.path.exists(img_path):
                 img = Image.open(img_path)
                 # 调整图片大小
