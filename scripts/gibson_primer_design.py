@@ -14,8 +14,9 @@ if getattr(sys, 'frozen', False):
 else:
     # 如果是python脚本
     root_path = os.path.dirname(os.path.abspath(__file__))
+    root_path = os.path.join(root_path, "..")
 
-root_path = os.path.join(root_path, "..")
+
 
 class GibsonPrimerDesignApp:
     """Gibson Assembly引物设计工具的图形用户界面"""
