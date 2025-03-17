@@ -3,10 +3,9 @@
 
 # 核心依赖
 biopython==1.81
-pillow==10.4.0
 
 # GUI依赖
-tk==0.1.0
+pillow==10.4.0
 
 # 打包依赖
 pyinstaller==6.10.0 
