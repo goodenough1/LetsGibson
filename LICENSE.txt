@@ -44,8 +44,6 @@ Let's Gibson可执行程序（LetsGibson.exe）
 
 技术限制：
 
-禁止反编译/逆向工程LetsGibson.exe
-
 禁止制作功能相同的衍生软件
 
 责任免除：
@@ -109,8 +107,6 @@ Prohibit unofficial interface cloning
 Unauthorized merchandising forbidden
 
 Technical Restrictions:
-
-Reverse engineering of LetsGibson.exe prohibited
 
 No functional clone development
 
