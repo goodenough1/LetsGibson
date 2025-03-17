@@ -3,7 +3,6 @@
 
 from Bio import SeqIO
 from Bio.Seq import Seq
-import primer_calculate
 import random
 
 class DNATools:
@@ -46,9 +45,38 @@ class DNATools:
         """返回序列的反向互补序列"""
         return str(Seq(seq).reverse_complement())
     
+    
     def calculate_tm(self, seq):
-        """计算序列的退火温度（Tm值）"""
-        return primer_calculate.calc_tm(seq)
+        """计算引物的退火温度（Tm值）
+        
+        使用简化的Wallace规则计算短引物的Tm值，
+        对于长度>14的引物使用修正的公式。
+        
+        参数:
+            seq: 引物序列
+            
+        返回:
+            退火温度（摄氏度）
+        """
+        seq = seq.upper()
+        
+        # 计算碱基数量
+        a_count = seq.count('A')
+        t_count = seq.count('T')
+        g_count = seq.count('G')
+        c_count = seq.count('C')
+        
+        # 总长度
+        length = len(seq)
+        
+        # 对于短引物（≤14bp），使用Wallace规则
+        if length <= 14:
+            tm = 2 * (a_count + t_count) + 4 * (g_count + c_count)
+        else:
+            # 对于长引物，使用修正的公式
+            tm = 64.9 + 41 * (g_count + c_count - 16.4) / length
+        
+        return tm
     
     def calculate_gc_content(self, seq):
         """计算序列的GC含量"""
@@ -100,6 +128,7 @@ class DNATools:
         
         return False
     
+    
     def design_gibson_primers(self, fragments, vector, homology_length, linearization_method, linearization_info):
         """设计Gibson Assembly引物
         
@@ -134,7 +163,7 @@ class DNATools:
             # 使用限制酶切
             enzyme = linearization_info.get('enzyme', '')
             
-            # 酶切位点数据库，格式为：'酶名': ('识别序列', 切割位置)
+            # 酶切位点数据，格式为：'酶名': ('识别序列', 切割位置)
             # 切割位置表示在识别序列中从5'端开始计数的切割位置
             # 例如：EcoRI (G^AATTC) 在第1个位置切割，表示为1
             enzyme_sites = {

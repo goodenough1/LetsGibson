@@ -835,6 +835,7 @@ End-User License Agreement (CC BY-NC 4.0)
 
 本作品包括：
 
+Let's Gibson 源码（github仓库scripts中的文件）
 Let's Gibson 可执行文件 (LetsGibson.exe)
 GUI 设计
 文档和图形资产（Logo等）
@@ -885,6 +886,7 @@ Copyright (c) [2025] [DINGYi,4D Genome Lab]
 
 This work includes:
 
+Let's Gibson source（Files in scripts folder in github repositories.）
 Let's Gibson executable (LetsGibson.exe)
 GUI design
 Documentation & graphical assets (Logo, etc.)
