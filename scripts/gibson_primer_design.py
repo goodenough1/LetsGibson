@@ -865,7 +865,6 @@ GUI 设计
 禁止未经授权的商品销售
 
 技术限制：
-禁止对LetsGibson.exe进行逆向工程
 禁止开发功能克隆
 
 责任免除：
@@ -916,7 +915,6 @@ Prohibit unofficial interface cloning
 Unauthorized merchandising forbidden
 
 Technical Restrictions:
-Reverse engineering of LetsGibson.exe prohibited
 No functional clone development
 
 Liability Exclusion:
