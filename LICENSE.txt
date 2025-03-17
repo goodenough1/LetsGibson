@@ -1,0 +1,127 @@
+Let's Gibson - Gibson Assembly 引物设计工具
+最终用户许可协议（CC BY-NC 4.0）
+
+版权所有 (c) [2025] [DINGYi,4D Genome Lab]
+[francisding@qq.com, 4dgenome.net]
+
+本作品包括：
+
+Let's Gibson可执行程序（LetsGibson.exe）
+
+图形用户界面设计
+
+使用文档与图形素材（Logo等）
+
+根据知识共享署名-非商业性使用4.0国际许可协议（CC BY-NC 4.0）授权。
+完整协议内容请访问：https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+您有权：
+
+共享 - 通过任何媒介复制、分发本作品
+
+演绎 - 修改、转换或基于本作品进行再创作
+
+必须遵守以下条件：
+
+署名 - 必须显著标注"Let's Gibson"名称及Logo，附许可协议链接，明确说明是否修改原始作品
+
+非商业 - 禁止用于直接或间接商业用途，包括：
+• 商业机构内部付费服务
+• 整合至盈利性软件产品
+• 通过订阅制或广告获利
+
+特别条款：
+
+商标保护："Let's Gibson"名称及Logo为受保护标识，禁止：
+
+在衍生作品中修改视觉设计
+
+用于非官方版本的程序界面
+
+未经授权制作周边商品
+
+技术限制：
+
+禁止反编译/逆向工程LetsGibson.exe
+
+禁止制作功能相同的衍生软件
+
+责任免除：
+
+示例文件不表征实际序列可用性
+
+引物设计结果需经实验验证
+
+因使用本工具导致的实验损耗恕不担责
+
+协议实施：
+
+软件安装目录包含LICENSE.txt副本
+
+图形界面"关于"页面显示协议摘要
+
+用户在使用本软件的结果时需注明软件出处和本仓库地址(https://github.com/goodenough1/LetsGibson)
+
+Let's Gibson - Gibson Assembly Primer Design Tool
+End-User License Agreement (CC BY-NC 4.0)
+
+Copyright (c) (c) [2025] [DINGYi,4D Genome Lab]
+[francisding@qq.com, 4dgenome.net]
+
+This work includes:
+
+Let's Gibson executable (LetsGibson.exe)
+
+GUI design
+
+Documentation & graphical assets (Logo, etc.)
+
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+Full text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+You may:
+
+Share - reproduce and distribute the material
+
+Adapt - remix, transform, or build upon the material
+
+Under conditions:
+
+Attribution - Visibly credit "Let's Gibson" with Logo, link to license, indicate changes
+
+NonCommercial - No commercial use including:
+• Paid services in commercial entities
+• Integration into for-profit software
+• Monetization via subscriptions/ads
+
+Special Provisions:
+
+Trademark Protection:
+
+No modification of Logo in derivatives
+
+Prohibit unofficial interface cloning
+
+Unauthorized merchandising forbidden
+
+Technical Restrictions:
+
+Reverse engineering of LetsGibson.exe prohibited
+
+No functional clone development
+
+Liability Exclusion:
+
+Example files not guaranteed usable
+
+Experimental validation required
+
+No liability for experimental costs
+
+Implementation:
+
+LICENSE.txt included in installation directory
+
+Protocol summary in "About" dialog
+
+When using the results of the software, the user should indicate the source of the software and the address of this repositories.(https://github.com/goodenough1/LetsGibson)
