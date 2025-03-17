@@ -72,7 +72,7 @@ Copyright (c) (c) [2025] [DINGYi,4D Genome Lab]
 
 This work includes:
 
-Let's Gibson source（Files in scripts folder in github repository）
+Let's Gibson source（Files in scripts folder in github repositories.）
 
 Let's Gibson executable (LetsGibson.exe)
 
