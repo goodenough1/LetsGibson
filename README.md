@@ -1,9 +1,71 @@
- # Let's Gibson - Gibson Assembly 引物设计工具
-
+# <strong>English Guide</strong>
+# Let's Gibson - Gibson Assembly Primer Design Tool
 <div align="center">
-  <img src="https://dingyi.asia/pdf/LetsGibson-1.svg" alt="LetsGibson Logo" width="200">
+  <img src="https://github.com/goodenough1/LetsGibson/blob/main/assets/LetsGibson.svg?raw=true" alt="LetsGibson Logo" width="500">
 </div>
 
+## Usage Instructions
+
+1. **Run the Program:**
+   ```
+   Double-click LetsGibson.exe
+   ```
+
+2. **In the Graphical Interface:**
+
+   a. **Add Insert Fragments:**
+      - Click the "Add Fragment" button
+      - Select the insert fragment file in FASTA format
+      - Multiple fragments can be added and reordered using the "Move Up" and "Move Down" buttons
+
+   b. **Add Vector Information:**
+      - Click the "Browse..." button to select a vector file in FASTA format
+      - Choose the vector linearization method:
+        * **Restriction Enzyme Digestion:** Select an enzyme from the dropdown menu
+        * **PCR Amplification:** Enter forward and reverse primer sequences
+
+   c. **Set Homology Arm Length:**
+      - Default is 25 bp, adjustable between 15-40 bp as needed
+
+   d. **Click the "Design Primers" button**
+
+3. **View Results:**
+   - The program will automatically switch to the "Results" tab
+   - Displays forward and reverse primer sequences for each fragment, including sequence, Tm value, GC content, etc.
+   - Results can be exported in CSV or TXT format
+
+## Example Files
+
+The tool includes the following example files for testing:
+- `example_vector.fasta`: Example vector (pUC19)
+- `example_fragment1.fasta`: Example insert fragment 1 (GFP)
+- `example_fragment2.fasta`: Example insert fragment 2 (mCherry)
+- `example_multiple_fragments.fasta`: Example file with multiple insert fragments (GFP, mCherry)
+
+## Notes
+
+1. All DNA sequence files should be in FASTA format
+2. Both the vector and insert fragments should be double-stranded DNA sequences
+3. If using PCR linearization, the provided primers should match the vector sequence
+4. Homology arm length is typically 15-40 bp, with 25 bp being common
+5. Primer design considers Tm values, GC content, and other parameters to ensure PCR specificity and efficiency
+
+## Frequently Asked Questions (FAQ)
+
+**Q: Why can't my vector find a restriction enzyme site?**  
+A: Ensure the selected restriction enzyme has a recognition site within the vector sequence. If not, choose another enzyme or use PCR linearization.
+
+**Q: What should I do if my primer Tm value is too low or too high?**  
+A: The program attempts to optimize primer design, but you can try adjusting the homology arm length or modifying the fragment order.
+
+**Q: Can I design primers for multiple fragments?**  
+A: Yes, this tool supports any number of insert fragments. Simply add them in the desired order, but it is recommended to follow the guidelines of your Gibson Assembly kit regarding insert quantity.
+
+# <strong>中文向导</strong>
+# Let's Gibson - Gibson Assembly 引物设计工具
+<div align="center">
+  <img src="https://github.com/goodenough1/LetsGibson/blob/main/assets/LetsGibson.svg?raw=true" alt="LetsGibson Logo" width="500">
+</div>
 ## 使用方法
 
 1. 运行程序：
