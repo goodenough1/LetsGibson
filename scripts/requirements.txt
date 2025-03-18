@@ -1,11 +1,11 @@
 # Let's Gibson - Gibson Assembly Primer Design Tool
-# 所需Python库
+# Python libraries required
 
-# 核心依赖
+# Core dependency
 biopython==1.81
 
-# GUI依赖
+# GUI dependency
 pillow==10.4.0
 
-# 打包依赖
+# Packaging dependency
 pyinstaller==6.10.0 
