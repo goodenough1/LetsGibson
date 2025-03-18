@@ -663,8 +663,7 @@ class DNATools:
             
             # 片段引物
             for primer_info in primers["fragment_primers"]:
-                # 使用display_name或原始名称
-                fragment_name = primer_info.get("display_name", primer_info.get("name", "Fragment"))
+                fragment_name = primer_info.get("name", "Fragment")
                 
                 fw = primer_info["fw"]
                 fw_name = fw.get('name', f"{fragment_name}-F")
@@ -766,7 +765,7 @@ class DNATools:
             f.write(f"{texts['fragment_primers']}\n\n")
             
             for primer_info in primers["fragment_primers"]:
-                fragment_name = primer_info.get("display_name", primer_info.get("name", "Fragment"))
+                fragment_name = primer_info.get("name", "Fragment")
                 f.write(f"{fragment_name}:\n")
                 
                 # 正向引物
